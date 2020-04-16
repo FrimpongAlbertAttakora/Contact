@@ -19,7 +19,7 @@ app.use('/contact', contactRoute);
 
 
 // Serving static folder
-app.use(express.static(path.join(__dirname, './public'))); 
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 
 // Connect to DB
