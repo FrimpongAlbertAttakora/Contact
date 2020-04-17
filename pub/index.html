@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
+    
+    <title>myPortfolioWebsite</title>
+</head>
+<body>
+    <div id="container">
+        <header id = 'head'>
+            <h1 id = 'h1_1'>
+                Hello, I'am <span>Albert Attakora Frimpong</span>.
+                <br>
+                I'am a full stack Web Developer.
+            </h1>
+
+            <h2>
+                <button id="btn"><a href="#foot"> CONTACT ME </a></button>
+                <p>
+                    <a><i class="far fa-envelope"></i></a>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </p>
+            </h2>
+        </header>
+
+        <nav id="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+
+            <ul class="navbar-nav">
+                <a href="#about"><li id="abt">ABOUT</li></a>
+                <a href="#portfolio"><li id="port">PORTFOLIO</li></a>
+                <a href="#skills"><li id="skill">SKILLS</li></a>
+                <a href="#foot"><li id="cont">CONTACT</li></a>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+            <a href="#about"><li id="abt">ABOUT</li></a>
+            <a href="#portfolio"><li id="port">PORTFOLIO</li></a>
+            <a href="#skills"><li id="skill">SKILLS</li></a>
+            <a href="#foot"><li id="cont">CONTACT</li></a>
+        </div>
+
+        <section id="about">
+            <article id="about_1">
+                <hr class="bar">
+                <h3>ABOUT</h3>
+                <hr class="bar">
+            </article>
+            <div id="about_intro">
+                <p>
+                    Results oriented full stack web developer 
+                    with a passion for making ideas come to reality.
+                </p>
+            </div>
+            <article id="about_2">
+                <div id="personal_image">
+                    <img src="/images/myPic1.jpg" data-aos="fade-right" alt="My pesonal pic" sizes="" srcset="">
+                </div>
+                <div id="personal_info" data-aos="fade-left">
+                    <div>
+                        <p>
+                            I am a full stack web developer and also a 
+                            professional high school mathematics teacher. My interest 
+                            in technology and mathematics has always 
+                            motivated me to sought out opportunities and
+                            challenges in web development.  
+                        </p>
+                        <br>
+                        <p>
+                            With my obsessive attention to details, I love to 
+                            build fast, responsive, intuitive and dynamic websites
+                            and web apps. I build web pages that loads fast, has 
+                            layout that works on any device; whether small or big
+                            screens, interactive and dynamic.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section id="portfolio">
+            <article id="about_1">
+                <hr style="background-color: #718093" class="bar">
+                <h3 style="color: #718093">PORTFOLIO</h3>
+                <hr style="background-color: #718093" class="bar">
+            </article>
+            <article>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </article>
+        </section>
+
+
+        <section id="skills">
+                <article id="about_1">
+                    <hr style="background-color: #f5f6fa" class="bar">
+                    <h3 style="color: #f5f6fa">SKILLS</h3>
+                    <hr style="background-color: #f5f6fa" class="bar">
+                </article>
+                
+                <article id="skill_info">
+                    <div id="skill_info_sub">
+                        <h2>FRONTEND <hr></h2>
+                        <div id="dev_logo"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom">
+                            <p> <span><img src="images/Logo/html_2.png" alt=""></span><span>HTML5</span> </p>
+                            <p> <span><img src="images/Logo/css_2.png" alt=""></span><span>CSS3</span> </p>
+                            <p> <span><img src="images/Logo/bootstrap.png" alt=""></span><span>BOOTSTRAP</span> </p>
+                            <p> <span><img src="images/Logo/javascript.png" alt=""></span><span>JAVASCRIPT</span> </p>
+                            <p> <span><img src="images/Logo/vue_1.png" alt=""></span><span>VUE</span> </p>
+                            <p> <span><img src="images/Logo/vuetify_2.png" alt=""></span><span>VUETIFY</span> </p>
+                        </div>
+                    </div>
+                    <div id="skill_info_sub">
+                        <h2>BACKEND <hr></h2>
+                        <div id="dev_logo"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom">
+                            <p> <span><img src="images/Logo/nodejs.png" alt=""></span><span>NODE</span> </p>
+                            <p> <span><img src="images/Logo/css_2.png" alt=""></span><span>EXPRESS</span> </p>
+                            <p> <span><img src="images/Logo/mongodb.png" alt=""></span><span>MONGODB</span> </p>
+                        </div>
+                    </div>
+                    <div id="skill_info_sub">
+                        <h2>OTHERS <hr></h2>
+                        <div id="dev_logo"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom">
+                          <p> <span><img src="images/Logo/github.png" alt=""></span><span>GITHUB</span> </p>
+                            <p> <span><img src="images/Logo/heroku.png" alt=""></span><span>HEROKU</span> </p>
+                            <p> <span><img src="images/Logo/netlify.png" alt=""></span><span>NETLIFY</span> </p>
+                            <p> <span><img src="images/Logo/wordpress.png" alt=""></span><span>WORDPRESS</span> </p>
+                            <p> <span><img src="images/Logo/wordpress.png" alt=""></span><span>ADOBE XD</span> </p>
+                        </div>
+                    </div>
+                </article>
+        </section>
+        <footer id="foot">
+            <article id="about_1">
+                    <hr style="background-color: #f5f6fa" class="bar">
+                    <h3 style="color: #f5f6fa">CONTACT</h3>
+                    <hr style="background-color: #f5f6fa" class="bar">
+            </article>
+            <article id="contact">
+                <p id="contact_question"
+                data-aos="zoom-in-up"
+                >Want to hire me, work together or have a question?</p>
+                <form action="/contact" method="post">
+                    <input type="text" name="name" id="" placeholder="Name" required>
+                    <input type="email" name="email" id="" placeholder="Your Email" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" id="form_btn">Submit</button>
+                </form>
+            </article>
+            <article>
+                <div id="social_contact">
+                <p id="socialise">
+                Let's get social</p>
+                <p>Follow me on</p>
+                <p>
+                    <button>FACEBOOK</button>
+                    <button>LINKEDIN</button>
+                    <button>TWITTER</button>
+                    <button>GITHUB</button>
+                </p>
+                </div>
+            </article>
+
+        </footer>
+    </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/315ea4ae61.js" crossorigin="anonymous"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 2000,
+            });
+          </script>
+        <script src="main.js"></script>
+    </body>
+</html>
