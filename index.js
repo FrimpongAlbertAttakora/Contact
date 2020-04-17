@@ -12,14 +12,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 
+// Serving static folder
+app.use(express.static(path.join(__dirname, 'public'))); 
+
 
 // Import routes
 const contactRoute = require('./server/contact');
 app.use('/contact', contactRoute);
-
-
-// Serving static folder
-app.use(express.static(path.join(__dirname, 'public'))); 
 
 
 // Connect to DB
